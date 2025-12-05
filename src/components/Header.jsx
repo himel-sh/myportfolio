@@ -101,10 +101,12 @@ function Header({ toggleDarkMode }) {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-gray-900 text-white dark:bg-gray-200 dark:text-gray-900 px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:bg-gray-800 dark:hover:bg-white transition-colors flex items-center gap-2"
-                href="#"
+                href="https://drive.google.com/uc?export=download&id=1QYGp4iKDMW91Dq874GsmutmcSKuBaI0l"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Download size={16} />
-                Download CV
+                Resume
               </motion.a>
             </div>
           </nav>

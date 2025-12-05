@@ -11,15 +11,15 @@ function Footer() {
           viewport={{ once: false }}
           className="text-center text-sm text-slate-500 dark:text-slate-400 flex items-center justify-center gap-2"
         >
-          © 2023 |{" "}
+          © {new Date().getFullYear()} |{" "}
           <a
             className="underline hover:text-primary dark:hover:text-primary"
             href="#"
           >
             Designed and coded
           </a>{" "}
-          with <Heart className="text-red-500 fill-red-500" size={16} /> by Your
-          Name
+          with <Heart className="text-red-500 fill-red-500" size={16} /> by
+          Shahriar Hasan Himel
         </motion.p>
       </div>
     </footer>

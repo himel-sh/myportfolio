@@ -27,22 +27,9 @@ function Work() {
       reverse: false,
     },
     {
-      title: "Play Sync",
-      description: `A gaming showcase platform where users can browse indie games for free and install them from their official sites. This is a static website project.
-`,
-      images: [
-        "https://i.ibb.co.com/zh4K7Hpy/Play-Sync1.png",
-        "https://i.ibb.co.com/NnrfqGB5/Play-Sync2.png",
-      ],
-      liveUrl: "https://playsync-gamehub.web.app/",
-      codeUrl: "https://github.com/himel-sh/playsync.git",
-      tags: ["React", "Firebase", "Tailwindcss", "Figma", "Git"],
-      reverse: true,
-    },
-    {
       title: "Quick Cart",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+      description: `A full-stack e-commerce application with secure authentication, product management, and dynamic shopping features.
+`,
       images: [
         "https://i.ibb.co.com/YJrnzNg/Quick-Cart1.png",
         "https://i.ibb.co.com/dR35YDW/Quick-Cart2.png",
@@ -53,14 +40,28 @@ function Work() {
         "React",
         "Next.js",
         "Typescript",
-        "Nest.js",
-        "PostgreSQL",
+        "Mongoose",
+        "API Routes",
+        "Clerk",
+        "Inngest",
         "Tailwindcss",
         "Figma",
-        "Cypress",
-        "Storybook",
+
         "Git",
       ],
+      reverse: true,
+    },
+    {
+      title: "Play Sync",
+      description: `A gaming showcase platform where users can browse indie games for free and install them from their official sites. This is a static website project.
+`,
+      images: [
+        "https://i.ibb.co.com/zh4K7Hpy/Play-Sync1.png",
+        "https://i.ibb.co.com/NnrfqGB5/Play-Sync2.png",
+      ],
+      liveUrl: "https://playsync-gamehub.web.app/",
+      codeUrl: "https://github.com/himel-sh/playsync.git",
+      tags: ["React", "Firebase", "Tailwindcss", "Figma", "Git"],
       reverse: false,
     },
   ];
