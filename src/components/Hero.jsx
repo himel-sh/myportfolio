@@ -48,7 +48,7 @@ function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 md:p-12 lg:p-16"
+          className="bg-white dark:bg-primary/20 rounded-2xl shadow-lg p-8 md:p-12 lg:p-16 border border-primary/20"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <motion.div
@@ -58,14 +58,14 @@ function Hero() {
               className="flex flex-col space-y-8"
             >
               <motion.div variants={itemVariants}>
-                <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white tracking-tight leading-tight">
+                <h1 className="text-5xl md:text-6xl font-bold text-dark dark:text-light tracking-tight leading-tight">
                   Hi, I'm Himel
                   <span className="inline-block animate-wave">👋</span>
                 </h1>
               </motion.div>
               <motion.p
                 variants={itemVariants}
-                className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+                className="text-lg text-dark/80 dark:text-accent/90 leading-relaxed"
               >
                 I'm a MERN stack developer (React.js & Node.js) with a focus on
                 creating (and occasionally designing) exceptional digital
@@ -74,9 +74,9 @@ function Hero() {
                 applications, I enjoy it more each day.
               </motion.p>
               <motion.div variants={itemVariants} className="space-y-4">
-                <div className="flex items-center space-x-3 text-gray-700 dark:text-gray-300">
+                <div className="flex items-center space-x-3 text-dark/80 dark:text-accent/90">
                   <MapPin
-                    className="text-gray-500 dark:text-gray-400"
+                    className="text-primary dark:text-primary"
                     size={20}
                   />
                   <span>Dhaka, Bangladesh</span>
@@ -85,9 +85,9 @@ function Hero() {
                   <motion.div
                     animate={{ scale: [1, 1.2, 1] }}
                     transition={{ repeat: Infinity, duration: 2 }}
-                    className="w-3 h-3 rounded-full bg-green-500"
+                    className="w-3 h-3 rounded-full bg-primary"
                   />
-                  <span className="text-gray-700 dark:text-gray-300">
+                  <span className="text-dark/80 dark:text-accent/90">
                     Available for new projects
                   </span>
                 </div>
@@ -121,7 +121,7 @@ function Hero() {
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                    className="text-primary dark:text-primary hover:text-primary dark:hover:text-primary transition-colors"
                   >
                     <Icon size={24} />
                   </motion.a>
@@ -137,7 +137,7 @@ function Hero() {
               <div className="relative w-80 h-96">
                 <div
                   ref={shadowRef}
-                  className="absolute inset-0 bg-gray-200 dark:bg-gray-700 rounded-lg transform -translate-x-3 translate-y-3"
+                  className="absolute inset-0 bg-accent/20 dark:bg-primary/10 rounded-lg transform -translate-x-3 translate-y-3"
                 />
                 <img
                   ref={imageRef}

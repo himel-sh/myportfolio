@@ -30,10 +30,10 @@ function Contact() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <span className="inline-block bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-sm font-medium px-4 py-1.5 rounded-full">
+          <span className="inline-block bg-accent/20 dark:bg-secondary/10 text-dark/80 dark:text-light/85 text-sm font-medium px-4 py-1.5 rounded-full">
             Get in touch
           </span>
-          <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+          <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-dark dark:text-light">
             What's next? Feel free to reach out to me
           </h2>
           <p className="mt-4 text-slate-600 dark:text-slate-400">

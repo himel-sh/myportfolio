@@ -45,10 +45,10 @@ function Education() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <span className="inline-block bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-sm font-medium px-4 py-1.5 rounded-full">
+            <span className="inline-block bg-accent/20 dark:bg-secondary/10 text-dark/80 dark:text-light/85 text-sm font-medium px-4 py-1.5 rounded-full">
               Education
             </span>
-            <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+            <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-dark dark:text-light">
               My Educational Background
             </h2>
           </motion.div>
@@ -65,7 +65,7 @@ function Education() {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ scale: 1.02, y: -5 }}
-                className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border-l-4 border-primary"
+                className="bg-white dark:bg-primary/20 rounded-2xl shadow-lg p-8 border-l-4 border-primary"
               >
                 <div className="flex items-start gap-4">
                   <motion.div
@@ -74,16 +74,16 @@ function Education() {
                     className="p-3 bg-primary/10 rounded-lg"
                   >
                     <GraduationCap
-                      className="text-primary"
+                      className="text-secondary"
                       size={32}
                       strokeWidth={2}
                     />
                   </motion.div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-2xl font-bold text-dark dark:text-light mb-2">
                       {edu.degree}
                     </h3>
-                    <p className="text-lg text-gray-600 dark:text-gray-400 mb-3">
+                    <p className="text-lg text-dark/80 dark:text-light/85 mb-3">
                       {edu.institution}
                     </p>
                     <div className="flex items-center gap-2 text-gray-500 dark:text-gray-500">

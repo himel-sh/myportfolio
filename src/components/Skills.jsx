@@ -30,7 +30,7 @@ function Skills() {
         {
           name: "Next.js",
           Icon: SiNextdotjs,
-          color: "text-gray-900 dark:text-white",
+          color: "text-dark dark:text-light",
         },
         { name: "Tailwind CSS", Icon: SiTailwindcss, color: "text-cyan-400" },
       ],
@@ -52,18 +52,18 @@ function Skills() {
     {
       title: "Tools",
       skills: [
-        { name: "Git", Icon: SiGit, color: "text-gray-900 dark:text-white" },
+        { name: "Git", Icon: SiGit, color: "text-dark dark:text-light" },
         {
           name: "GitHub",
           Icon: SiGithub,
-          color: "text-gray-900 dark:text-white",
+          color: "text-dark dark:text-light",
         },
         { name: "VS Code", Icon: Code, color: "text-blue-500" },
         { name: "Figma", Icon: SiFigma, color: "text-purple-500" },
         {
           name: "Vercel",
           Icon: SiVercel,
-          color: "text-gray-900 dark:text-white",
+          color: "text-dark dark:text-light",
         },
         { name: "Netlify", Icon: SiNetlify, color: "text-teal-500" },
       ],
@@ -99,10 +99,10 @@ function Skills() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="inline-block bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-sm font-medium px-4 py-1.5 rounded-full">
+            <span className="inline-block bg-accent/20 dark:bg-secondary/10 text-dark/80 dark:text-light/85 text-sm font-medium px-4 py-1.5 rounded-full">
               Skills
             </span>
-            <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+            <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-dark dark:text-light">
               The skills, tools and technologies I am really good at
             </h2>
           </motion.div>
@@ -116,7 +116,7 @@ function Skills() {
                 viewport={{ once: false }}
                 transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
               >
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-8">
+                <h3 className="text-2xl font-bold text-dark dark:text-light text-center mb-8">
                   {category.title}
                 </h3>
                 <motion.div

@@ -15,10 +15,10 @@ function About() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <span className="inline-block bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-sm font-medium px-4 py-1.5 rounded-full">
+            <span className="inline-block bg-accent/20 dark:bg-secondary/10 text-dark/80 dark:text-light/85 text-sm font-medium px-4 py-1.5 rounded-full">
               About me
             </span>
-            <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+            <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-dark dark:text-light">
               Get to Know Me
             </h2>
           </motion.div>
@@ -28,7 +28,7 @@ function About() {
             viewport={{ once: false }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 space-y-6">
+            <div className="prose prose-lg dark:prose-invert max-w-none text-dark/80 dark:text-light/85 space-y-6">
               <p>
                 I'm a passionate{" "}
                 <span className="text-primary">self-proclaimed developer</span>{" "}

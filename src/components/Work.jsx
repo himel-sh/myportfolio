@@ -80,10 +80,10 @@ function Work() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <span className="inline-block bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-sm font-medium px-4 py-1.5 rounded-full">
+            <span className="inline-block bg-accent/20 dark:bg-secondary/10 text-dark/80 dark:text-light/85 text-sm font-medium px-4 py-1.5 rounded-full">
               Work
             </span>
-            <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+            <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-dark dark:text-light">
               Some of the noteworthy projects I have built
             </h2>
           </motion.div>
@@ -95,7 +95,7 @@ function Work() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8 lg:p-12"
+                className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center bg-white dark:bg-primary/20 shadow-lg rounded-2xl p-8 lg:p-12"
               >
                 {/* Images Section */}
                 <div
@@ -134,7 +134,7 @@ function Work() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: false }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="text-2xl font-bold text-gray-900 dark:text-white"
+                    className="text-2xl font-bold text-dark dark:text-light"
                   >
                     {project.title}
                   </motion.h3>
@@ -143,7 +143,7 @@ function Work() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: false }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed"
+                    className="mt-4 text-dark/80 dark:text-light/85 leading-relaxed"
                   >
                     {project.description}
                   </motion.p>
@@ -158,7 +158,7 @@ function Work() {
                       <motion.span
                         key={tag}
                         whileHover={{ scale: 1.05 }}
-                        className="bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 rounded-full px-3 py-1 text-sm font-medium"
+                        className="bg-secondary/20 text-dark dark:bg-secondary/40 dark:text-light rounded-full px-3 py-1 text-sm font-medium"
                       >
                         {tag}
                       </motion.span>
@@ -168,7 +168,7 @@ function Work() {
                     <motion.a
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-200 flex items-center gap-2"
+                      className="text-dark/80 dark:text-light/85 hover:text-primary dark:hover:text-primary transition-colors duration-200 flex items-center gap-2"
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -179,7 +179,7 @@ function Work() {
                     <motion.a
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors duration-200 flex items-center gap-2"
+                      className="text-dark/80 dark:text-light/85 hover:text-primary dark:hover:text-primary transition-colors duration-200 flex items-center gap-2"
                       href={project.codeUrl}
                       target="_blank"
                       rel="noopener noreferrer"

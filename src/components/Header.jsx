@@ -47,7 +47,7 @@ function Header({ toggleDarkMode }) {
   const navItems = ["Home", "About", "Education", "Skills", "Work", "Contact"];
 
   return (
-    <div className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
+    <div className="sticky top-0 z-50 bg-light/95 dark:bg-dark/90 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.header
           initial={{ y: -100, opacity: 0 }}
@@ -59,7 +59,7 @@ function Header({ toggleDarkMode }) {
             <motion.a
               href="#top"
               whileHover={{ scale: 1.05 }}
-              className="text-2xl font-bold text-gray-900 dark:text-white cursor-pointer"
+              className="text-2xl font-bold text-dark dark:text-light cursor-pointer"
             >
               &lt;SHH /&gt;
             </motion.a>
@@ -78,7 +78,7 @@ function Header({ toggleDarkMode }) {
                     className={`font-medium transition-colors ${
                       isActive
                         ? "text-primary dark:text-primary"
-                        : "text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                        : "text-dark/90 dark:text-light/90 hover:text-primary dark:hover:text-secondary"
                     }`}
                     href={item === "Home" ? "#top" : `#${sectionId}`}
                   >
@@ -92,7 +92,7 @@ function Header({ toggleDarkMode }) {
                 whileHover={{ scale: 1.1, rotate: 180 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="Toggle dark mode"
-                className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                className="text-dark/90 dark:text-light/90 hover:text-primary dark:hover:text-primary transition-colors"
                 onClick={handleToggle}
               >
                 {isDark ? <Sun size={24} /> : <Moon size={24} />}
@@ -100,7 +100,7 @@ function Header({ toggleDarkMode }) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-gray-900 text-white dark:bg-gray-200 dark:text-gray-900 px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:bg-gray-800 dark:hover:bg-white transition-colors flex items-center gap-2"
+                className="bg-primary text-white dark:bg-primary dark:text-white px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:bg-secondary dark:hover:bg-primary/80 transition-colors flex items-center gap-2"
                 href="https://drive.google.com/uc?export=download&id=1QYGp4iKDMW91Dq874GsmutmcSKuBaI0l"
                 target="_blank"
                 rel="noopener noreferrer"
